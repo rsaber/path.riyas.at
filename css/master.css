@@ -7147,3 +7147,7 @@ fieldset.collapsed {
   overflow: auto;
   z-index: 1;
 }
+
+.sidebar-item-is-active{
+  font-weight: 600;
+}
