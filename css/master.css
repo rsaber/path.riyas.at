@@ -7131,3 +7131,19 @@ fieldset.collapsed {
     font-size: 14pt !important; }
   .header__p {
     font-size: 11pt; } }
+
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  padding-left: 20px;
+}
+
+.main {
+  margin-left: 200px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
