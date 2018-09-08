@@ -16,9 +16,10 @@
                 <h6>by riyo</h6>
                 <div>
                     <ul class="page__nav-list">
-                        <a class="js-site-nav-link site-nav__link sidebar-item-is-active" href="#"><h2 class="site-nav__link__h">Vienna</h2></a>
-                        <a class="js-site-nav-link site-nav__link" href="#"><h2 class="site-nav__link__h">Cambridge</h2></a>
-                        <a class="js-site-nav-link site-nav__link" href="#"><h2 class="site-nav__link__h">Oxford</h2></a>
+                        {% for country in nav %}
+                            {{country}}
+                            <a class="js-site-nav-link site-nav__link {% if nav[country][0][1] %}sidebar-item-is-active{%endif%}" href="#"><h2 class="site-nav__link__h">{{nav[country][0][0]}}</h2></a>
+                        {% endfor %}
                     </ul>
                 </div>
             </nav>

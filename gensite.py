@@ -39,7 +39,13 @@ try:
 except:
     pass
 
-nav = {}
+nav = {
+    'Austria' : [
+        ('Vienna', True), 
+        ('Rome', False), 
+        ('Hamburg', False), 
+    ]
+}
 
 for country, itinaries in site_structure.items():
     country_path = os.path.join(output_dir, country)
