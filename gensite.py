@@ -63,6 +63,9 @@ for country, itinaries in site_structure.items():
         output = template.render(nav=nav, itin=itinerary)
         with open(output_path, "w") as f:
             f.write(output)
+
+        with open(os.path.join(output_dir, 'index.html'), "w") as f:
+            f.write(output)
         
 # make a random file the index
 '''
