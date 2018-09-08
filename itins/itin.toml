@@ -1,5 +1,7 @@
 
+# the category
 country = 'Austria'
+
 city = 'Vienna'
 
 abstract = '''

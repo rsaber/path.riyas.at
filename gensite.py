@@ -5,6 +5,11 @@ import glob
 from collections import namedtuple
 import pytoml as toml
 
+from shutil import copytree
+    
+from jinja2 import Environment, FileSystemLoader
+env = Environment(loader=FileSystemLoader('templates'))
+
 # only supports two level site structure
 
 itins = []
@@ -28,9 +33,22 @@ output_dir = '_site'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-for country, toml_obj in site_structure.items():
+try:
+    copytree(os.path.join('templates', 'css'), os.path.join(output_dir, 'css'))
+    copytree(os.path.join('templates', 'fonts'), os.path.join(output_dir, 'fonts'))
+except:
+    pass
+
+nav = {}
+
+for country, itinaries in site_structure.items():
     country_path = os.path.join(output_dir, country)
-    if not os.path.exists(country_path):
-        os.makedirs(country_path)
-    
-    
+
+    for plan in itinaries:
+        output_path = os.path.join(output_dir, '{}_{}.html'.format(country, plan['city']))
+        template = env.get_template('template.html')
+        output = template.render(nav=nav, itin=plan)
+        with open(output_path, "w") as f:
+            f.write(output)
+        
+        
