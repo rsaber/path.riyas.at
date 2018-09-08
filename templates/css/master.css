@@ -7138,6 +7138,7 @@ fieldset.collapsed {
   width: 200px;
   height: 100vh;
   padding-left: 20px;
+  padding-right: 0px;
 }
 
 .main {

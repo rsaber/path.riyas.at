@@ -18,7 +18,12 @@
                     <ul class="page__nav-list">
                         {% for country in nav %}
                             {{country}}
-                            <a class="js-site-nav-link site-nav__link {% if nav[country][0][1] %}sidebar-item-is-active{%endif%}" href="#"><h2 class="site-nav__link__h">{{nav[country][0][0]}}</h2></a>
+
+                            {% for subentry in nav[country] %}
+
+                            <a class="js-site-nav-link site-nav__link {% if subentry['itinerary_name'] == itin.itinerary_name %}sidebar-item-is-active{%endif%}" href="{{subentry['link']}}"><h2 class="site-nav__link__h">{{subentry['itinerary_name']}}</h2></a>
+                        
+                            {% endfor %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -27,7 +32,7 @@
         <main class="main" id="main">
             <div class="page-outer page-outer--sf">
                 <!-- BEGIN TITLE -->
-                <h1 class="homepage__intro">{{itin.city}}</h1>
+                <h1 class="homepage__intro">{{itin.itinerary_name}}</h1>
                 <!-- END TITLE -->
 
                 <!-- BEGIN SECTION -->

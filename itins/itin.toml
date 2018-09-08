@@ -4,6 +4,8 @@ country = 'Austria'
 
 city = 'Vienna'
 
+itinerary_name = 'Day in Vienna'
+
 abstract = '''
 A quick daytrip to Vienna, Austria. Fly out via Stansted after work, hack it in a hostel for the night, or in the airport, then explore for the day, and flyback the 2 days later. 
 '''
