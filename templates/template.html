@@ -17,13 +17,16 @@
                 <div>
                     <ul class="page__nav-list">
                         {% for country in nav %}
-                            {{country}}
+                            <li class="country">{{country}}</li>
+                            
+                            <ul class="page__nav-list">
 
                             {% for subentry in nav[country] %}
 
                             <a class="js-site-nav-link site-nav__link {% if subentry['itinerary_name'] == itin.itinerary_name %}sidebar-item-is-active{%endif%}" href="{{subentry['link']}}"><h2 class="site-nav__link__h">{{subentry['itinerary_name']}}</h2></a>
                         
                             {% endfor %}
+                            </ul>
                         {% endfor %}
                     </ul>
                 </div>

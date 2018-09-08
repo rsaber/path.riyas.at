@@ -5,7 +5,7 @@ import glob
 from collections import namedtuple
 import pytoml as toml
 
-from shutil import copytree, rmtree
+from shutil import copytree, rmtree, copy
     
 from jinja2 import Environment, FileSystemLoader
 env = Environment(loader=FileSystemLoader('templates'))
@@ -64,4 +64,8 @@ for country, itinaries in site_structure.items():
         with open(output_path, "w") as f:
             f.write(output)
         
-        
+# make a random file the index
+'''
+index_path = os.path.join(output_dir, 'index.html')
+copy(os.path.join(output_dir, '{}_{}'.format(country, name)), index_path)
+'''
