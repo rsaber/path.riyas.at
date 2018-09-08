@@ -27,7 +27,12 @@ time_type = "Arrive by"
 time_time = "10:00, Sunday"
 
 [[accom]]
-location = "Sleep at Airport"
+type = "Sleep"
+name = "Vienna Airport"
+location = "Airport"
+duration = "8 hours"
+check_in = "23:00 Friday"
+check_out = "6:00 Sunday"
 
 [[visits]]
 title = "Historic Center of Vienna"
@@ -35,9 +40,9 @@ notes = "Visit whenever"
 
 [[visits]]
 title = "Historic Center of Vienna"
-notes = "Visit whenever"
+notes = "Visit dsa"
 
 [[visits]]
 title = "Historic Center of Vienna"
-notes = "Visit whenever"
+notes = "Visit das"
 

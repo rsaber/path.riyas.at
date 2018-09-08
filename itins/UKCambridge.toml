@@ -1,0 +1,40 @@
+
+# the category
+country = 'United Kingdom'
+
+city = 'Cambridge'
+
+itinerary_name = 'Day in Cambridge'
+
+abstract = '''
+A quick daytrip to Cambridge. Leave via train from Liverpool St. Station. Explore gondalas, and Cambridge colleges, as well as churches.
+'''
+
+trip_length = "1 day"
+
+[[travel]]
+type = "Train"
+departure = "London Liverpool St. Station"
+arrival = "Cambridge"
+time_type = "Depart by"
+time_time = "17:00, Friday"
+
+[[travel]]
+type = "Train"
+departure = "Cambridge"
+arrival = "London Liverpool St. Station"
+time_type = "Arrive by"
+time_time = "10:00, Sunday"
+
+[[visits]]
+title = "Historic Center of Vienna"
+notes = "Visit whenever"
+
+[[visits]]
+title = "Historic Center of Vienna"
+notes = "Visit dsa"
+
+[[visits]]
+title = "Historic Center of Vienna"
+notes = "Visit das"
+

@@ -7135,9 +7135,10 @@ fieldset.collapsed {
 
 .sidebar {
   position: fixed;
-  width: 250px;
+  width: 200px;
   height: 100vh;
   padding-left: 20px;
+  padding-right: 0px;
 }
 
 .main {

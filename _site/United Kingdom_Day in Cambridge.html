@@ -16,15 +16,23 @@
                 <h6>by riyo</h6>
                 <div>
                     <ul class="page__nav-list">
-                        {% for country in nav %}
-                            {{country}}
-
-                            {% for subentry in nav[country] %}
-
-                            <a class="js-site-nav-link site-nav__link {% if subentry['itinerary_name'] == itin.itinerary_name %}sidebar-item-is-active{%endif%}" href="{{subentry['link']}}"><h2 class="site-nav__link__h">{{subentry['itinerary_name']}}</h2></a>
                         
-                            {% endfor %}
-                        {% endfor %}
+                            United Kingdom
+
+                            
+
+                            <a class="js-site-nav-link site-nav__link sidebar-item-is-active" href="United Kingdom_Day in Cambridge.html"><h2 class="site-nav__link__h">Day in Cambridge</h2></a>
+                        
+                            
+                        
+                            Austria
+
+                            
+
+                            <a class="js-site-nav-link site-nav__link " href="Austria_Day in Vienna.html"><h2 class="site-nav__link__h">Day in Vienna</h2></a>
+                        
+                            
+                        
                     </ul>
                 </div>
             </nav>
@@ -32,7 +40,7 @@
         <main class="main" id="main">
             <div class="page-outer page-outer--sf">
                 <!-- BEGIN TITLE -->
-                <h1 class="homepage__intro">{{itin.itinerary_name}}</h1>
+                <h1 class="homepage__intro">Day in Cambridge</h1>
                 <!-- END TITLE -->
 
                 <!-- BEGIN SECTION -->
@@ -45,7 +53,8 @@
                     <div class="section__text-mod ">
                         <p class="section__title">Abstract</p>
                         <div class="section__text">
-                            {{itin.abstract}}    
+                            A quick daytrip to Cambridge. Leave via train from Liverpool St. Station. Explore gondalas, and Cambridge colleges, as well as churches.
+    
                         </div>
                     </div>
                     <!-- END ENTRY -->
@@ -54,7 +63,7 @@
                     <div class="section__text-mod ">
                         <p class="section__title">Trip Length</p>
                         <div class="section__text">
-                           {{itin.trip_length}}
+                           1 day
                         </div>
                     </div>
                     <!-- END ENTRY -->
@@ -72,68 +81,46 @@
                     <!-- BEGIN ENTRY -->
                     <div class="section__text-mod ">
                         <div class="card-group">  
-                        {% for entry in itin.travel %} 
+                         
                             <div class="card card--full">
                                 <div class="card-inner">
                                     <div class="card__text-wrapper">
-                                        <h3 class="card__h">{{entry.type}}</h3>
+                                        <h3 class="card__h">Train</h3>
                                         <div class="card__text">   
-                                            <h2>{{entry.departure}}</h2>
+                                            <h2>London Liverpool St. Station</h2>
                                             <h6>to</h6>
-                                            <h2>{{entry.arrival}}</h2>
+                                            <h2>Cambridge</h2>
                                             <br>
-                                            <h6>{{entry.time_type}}</h6>
-                                            <p>{{entry.time_time}}</p>
+                                            <h6>Depart by</h6>
+                                            <p>17:00, Friday</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        {% endfor %}
+                         
+                            <div class="card card--full">
+                                <div class="card-inner">
+                                    <div class="card__text-wrapper">
+                                        <h3 class="card__h">Train</h3>
+                                        <div class="card__text">   
+                                            <h2>Cambridge</h2>
+                                            <h6>to</h6>
+                                            <h2>London Liverpool St. Station</h2>
+                                            <br>
+                                            <h6>Arrive by</h6>
+                                            <p>10:00, Sunday</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>      
                     </div>
                     <!-- END ENTRY -->
                 </section>
                 <!-- END SECTION -->
 
-                {% if 'accom' in itin %}
-                <!-- BEGIN SECTION -->
-                <section class="section">
-                    <h2 class="section__overline">
-                        <span class="section__overline-text">Accommodation</span>
-                    </h2>
-
-                    {% for entry in itin.accom %}
-                    <!-- BEGIN ENTRY -->
-                    <div class="section__text-mod ">
-                        <div class="card-group">   
-                            <div class="card card--full">
-                                <div class="card-inner">
-                                    <div class="card__text-wrapper">
-                                        <h3 class="card__h">{{entry.type}}</h3>
-                                        <div class="card__text">   
-                                            <h2>{{entry.name}}</h2>
-                                            <br>
-                                            <h6>Location</h6>
-                                            <p>{{entry.location}}</p>
-                                            <br>
-                                            <h6>Check in at</h6>
-                                            <p>{{entry.check_in}}</p>
-                                            <br>
-                                            <h6>Check out by</h6>
-                                            <p>{{entry.check_out}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END ENTRY -->
-                    {% endfor %}
-
-                    
-                </section>
-                <!-- END SECTION -->
-                {% endif %}
+                
 
                 <!-- BEGIN SECTION -->
                 <section class="section">
@@ -141,20 +128,46 @@
                         <span class="section__overline-text">Places of Interest</span>
                     </h2>
 
-                    {% for entry in itin.visits %}
+                    
 
                     <!-- BEGIN ENTRY -->
                     <div class="section__text-mod ">
-                        <p class="section__title">{{entry.title}}</p>
+                        <p class="section__title">Historic Center of Vienna</p>
                         <div class="section__text">
                             <ul>
-                                <li>{{entry.notes}}</li>
+                                <li>Visit whenever</li>
                             </ul>
                         </div>
                     </div>
                     <!-- END ENTRY -->
                     
-                    {% endfor %}
+                    
+
+                    <!-- BEGIN ENTRY -->
+                    <div class="section__text-mod ">
+                        <p class="section__title">Historic Center of Vienna</p>
+                        <div class="section__text">
+                            <ul>
+                                <li>Visit dsa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END ENTRY -->
+                    
+                    
+
+                    <!-- BEGIN ENTRY -->
+                    <div class="section__text-mod ">
+                        <p class="section__title">Historic Center of Vienna</p>
+                        <div class="section__text">
+                            <ul>
+                                <li>Visit das</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END ENTRY -->
+                    
+                    
 
                 </section>
                 <!-- END SECTION -->
