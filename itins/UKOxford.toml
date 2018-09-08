@@ -1,0 +1,37 @@
+
+# the category
+country = 'United Kingdom'
+
+city = 'Oxford'
+
+itinerary_name = 'Day in Oxford'
+
+wip = true
+
+abstract = '''
+A quick daytrip to Oxford. Leave via train from Liverpool St. Station. 
+'''
+
+trip_length = "1 day"
+
+[[travel]]
+type = "Train"
+departure = "London Liverpool St. Station"
+arrival = "Oxford"
+time_type = "Arrive by"
+time_time = "09:00, Saturday"
+
+[[travel]]
+type = "Train"
+departure = "Cambridge"
+arrival = "London Liverpool St. Station"
+time_type = "Arrive by"
+time_time = "19:00, Saturday"
+
+[[visits]]
+title = "Oxford University Campus"
+notes = [
+    "Campus",
+]
+
+

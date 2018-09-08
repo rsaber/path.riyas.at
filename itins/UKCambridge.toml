@@ -16,15 +16,15 @@ trip_length = "1 day"
 type = "Train"
 departure = "London Liverpool St. Station"
 arrival = "Cambridge"
-time_type = "Depart by"
-time_time = "17:00, Friday"
+time_type = "Arrive by"
+time_time = "09:00, Saturday"
 
 [[travel]]
 type = "Train"
 departure = "Cambridge"
 arrival = "London Liverpool St. Station"
 time_type = "Arrive by"
-time_time = "10:00, Sunday"
+time_time = "19:00, Saturday"
 
 [[visits]]
 title = "Fitzwilliam Museum"

@@ -21,7 +21,8 @@ path = 'itins/'
 for itin_path in glob.glob( os.path.join(path, '*.toml') ):
     with open(itin_path, "rb") as toml_file:
         obj = toml.load(toml_file)
-
+    if obj.get('wip', False):
+        continue
     if obj['country'] not in site_structure:
         site_structure[obj['country']] = []
     site_structure[obj['country']].append(obj)
