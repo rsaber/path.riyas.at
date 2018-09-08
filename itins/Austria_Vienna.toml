@@ -1,0 +1,36 @@
+
+abstract = '''
+A quick daytrip to Vienna, Austria. Fly out via Stansted after work, hack it in a hostel for the night, or in the airport, then explore for the day, and flyback the 2 days later. 
+'''
+
+trip_length = "1 day"
+
+[[travel]]
+type = "Plane"
+departure = "London (any)"
+arrival = "Vienna"
+time.type = "Depart by"
+time.time = "17:00, Friday"
+
+[[travel]]
+type = "Plane"
+departure = "Vienna"
+arrival = "London (any)"
+time.type = "Arrive by"
+time.time = "10:00, Sunday"
+
+[[accom]]
+location = "Sleep at Airport"
+
+[[visit]]
+title = "Historic Center of Vienna"
+notes = "Visit whenever"
+
+[[visit]]
+title = "Historic Center of Vienna"
+notes = "Visit whenever"
+
+[[visit]]
+title = "Historic Center of Vienna"
+notes = "Visit whenever"
+
