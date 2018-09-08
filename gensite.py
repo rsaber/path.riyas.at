@@ -5,28 +5,32 @@ import glob
 from collections import namedtuple
 import pytoml as toml
 
-Itinerary = namedtuple('Itinerary', 'path country city')
+# only supports two level site structure
 
 itins = []
 
 site_structure = {}
 
 path = 'itins/'
-for toml_itin in glob.glob( os.path.join(path, '*.toml') ):
 
-    cats = os.path.splitext(os.path.basename(toml_itin))[0].split('_')
-
-    itins.append(
-        Itinerary(
-            toml_itin,
-            os.path.splitext(os.path.basename(toml_itin))[0].split('_')[0],
-            os.path.splitext(os.path.basename(toml_itin))[0].split('_')[1]
-        )
-    )
-
-print(itins)
-
-for itin in itins:
-    with open(itin.path, "rb") as toml_file:
+for itin_path in glob.glob( os.path.join(path, '*.toml') ):
+    with open(itin_path, "rb") as toml_file:
         obj = toml.load(toml_file)
-    print(obj)
+
+    if obj['country'] not in site_structure:
+        site_structure[obj['country']] = []
+    site_structure[obj['country']].append(obj)
+
+# create folders
+
+output_dir = '_site'
+
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+for country, toml_obj in site_structure.items():
+    country_path = os.path.join(output_dir, country)
+    if not os.path.exists(country_path):
+        os.makedirs(country_path)
+    
+    

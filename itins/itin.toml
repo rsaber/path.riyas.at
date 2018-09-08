@@ -1,7 +1,6 @@
 
-[[Austria]]
-
-[[Austria.Vienna]]
+country = 'Austria'
+city = 'Vienna'
 
 abstract = '''
 A quick daytrip to Vienna, Austria. Fly out via Stansted after work, hack it in a hostel for the night, or in the airport, then explore for the day, and flyback the 2 days later. 
@@ -9,32 +8,32 @@ A quick daytrip to Vienna, Austria. Fly out via Stansted after work, hack it in 
 
 trip_length = "1 day"
 
-[[Austria.Vienna.travel]]
+[[travel]]
 type = "Plane"
 departure = "London (any)"
 arrival = "Vienna"
 time_type = "Depart by"
 time_time = "17:00, Friday"
 
-[[Austria.Vienna.travel]]
+[[travel]]
 type = "Plane"
 departure = "Vienna"
 arrival = "London (any)"
 time_type = "Arrive by"
 time_time = "10:00, Sunday"
 
-[[Austria.Vienna.accom]]
+[[accom]]
 location = "Sleep at Airport"
 
-[[Austria.Vienna.visits]]
+[[visits]]
 title = "Historic Center of Vienna"
 notes = "Visit whenever"
 
-[[Austria.Vienna.visits]]
+[[visits]]
 title = "Historic Center of Vienna"
 notes = "Visit whenever"
 
-[[Austria.Vienna.visits]]
+[[visits]]
 title = "Historic Center of Vienna"
 notes = "Visit whenever"
 
