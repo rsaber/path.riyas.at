@@ -18,7 +18,7 @@
                     <ul class="page__nav-list">
                         {% for country in nav %}
                             <li class="country">{{country}}</li>
-                            
+
                             <ul class="page__nav-list">
 
                             {% for subentry in nav[country] %}
@@ -151,7 +151,9 @@
                         <p class="section__title">{{entry.title}}</p>
                         <div class="section__text">
                             <ul>
-                                <li>{{entry.notes}}</li>
+                                {% for note in entry.notes %}
+                                <li>{{note}}</li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>

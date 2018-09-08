@@ -27,14 +27,86 @@ time_type = "Arrive by"
 time_time = "10:00, Sunday"
 
 [[visits]]
-title = "Historic Center of Vienna"
-notes = "Visit whenever"
+title = "Fitzwilliam Museum"
+notes = [
+    "Free entry"
+]
 
 [[visits]]
-title = "Historic Center of Vienna"
-notes = "Visit dsa"
+title = "foodPark nightmarkets"
+notes = [
+    "Food and stuff, but have to stay late at night"
+]
+
 
 [[visits]]
-title = "Historic Center of Vienna"
-notes = "Visit das"
+title = "Cambridge University Botanical Gardens"
+notes = [
+    "Free entry"
+]
+
+
+[[visits]]
+title = "Cambridge University Colleges"
+notes = [
+    "King's College is a must see"
+]
+
+
+[[visits]]
+title = "Fitzbillies"
+notes = [
+    "Chelsea Buns, delicious pastries, located on Bridge and Trumpington Street"
+]
+
+[[visits]]
+title = "River Cam"
+notes = [
+    "Can be both a tour, or you can self-punt"
+]
+
+[[visits]]
+title = "The Eagle"
+notes = [
+    "Pub where Francis Crick announced that he and Watson had discovered DNA",
+    "Also includes RAF bar with graffiti of Second World War airmen",
+    "9 Benet Street, Cambridge CB2 3QN"
+]
+
+[[visits]]
+title = "Granchester"
+notes = [
+    "Nice country side walk",
+    "If sunny, try the Orcard Tea Gardens"
+]
+
+[[visits]]
+title = "King's College Chapel"
+notes = [
+    "Most recognisable building in Cambridge",
+    "Old Gothic structure",
+    "Has admission fee"
+]
+
+[[visits]]
+title = "The Plough Pub"
+notes = [
+    "In Fen Ditton, a village a short distance away from centre",
+    "Nice river bank views"
+]
+
+[[visits]]
+title = "The Round Church"
+notes = [
+    "Second oldest building",
+    "Round Church Vestry, Bridge Street, Cambridge CB2 1UB"
+]
+
+[[visits]]
+title = "Wandlebury Country Park"
+notes = [
+    "Car required from Cambridge",
+    "Gog Magog Hills, Stapleford, CB22 3AE"
+]
+
 
